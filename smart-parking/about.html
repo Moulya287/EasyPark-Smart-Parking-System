@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - EasyPark</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    body { background-color: #f5f5f5; color: #333; }
+
+    /* Header */
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items:center;
+      gap: 5px;
+    }
+    .logo-container img {
+      height: 70px;
+    }
+    .logo-container h1 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* Navbar */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* About Section */
+    .about-section {
+      padding: 60px 50px;
+      background-color: #ffffff;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .about-section h2 {
+      font-size: 40px;
+      color: #1e90ff;
+      margin-bottom: 25px;
+    }
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      margin-top: 40px;
+    }
+
+    .features h3 {
+      font-size: 28px;
+      color: #1e90ff;
+      margin-bottom: 15px;
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .features li {
+      background: #f0f8ff;
+      padding: 15px 20px;
+      border-left: 5px solid #1e90ff;
+      margin-bottom: 12px;
+      border-radius: 6px;
+      font-size: 17px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px 50px;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; }
+      nav { margin-top: 10px; }
+      .about-section { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="Screenshot_2025-10-06_160522-removebg-preview.png" alt="EasyPark Logo">
+      <h1>EasyPark</h1>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="venue.html">Venues</a>
+      <a href="adminlogin.html">Admin Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Content -->
+  <section class="about-section">
+    <h2>About Us – EasyPark</h2>
+    <p>
+      At <strong>EasyPark</strong>, we believe parking should be simple, smart, and stress-free. Our platform connects drivers with available parking spaces at trusted venues, helping them save time and avoid the hassle of searching for spots.
+    </p>
+    <p>
+      We also empower <strong>venue owners</strong> to manage their parking areas efficiently through our secure admin panel. Whether you're a user looking for a space or an admin managing a venue, EasyPark delivers a seamless experience built on clarity and control.
+    </p>
+
+    <div class="features">
+      <h3>🔹 Key Features:</h3>
+      <ul>
+        <li><strong>Smart Parking Management:</strong> Venues can easily track, add, and update their parking slots in real time.</li>
+        <li><strong>Role-Based Access:</strong> Only authorized admins of a specific venue can view and manage their own slots — ensuring privacy and data security.</li>
+        <li><strong>User Transparency:</strong> Regular users can explore venue details such as name, location, and facilities — but they <strong>cannot view or manage</strong> individual parking slots.</li>
+        <li><strong>Real-Time Availability:</strong> Admins can monitor the status of each slot (available, occupied, or reserved) instantly.</li>
+        <li><strong>Seamless Experience:</strong> EasyPark’s clean design and smooth navigation make parking management easy for everyone.</li>
+        <li><strong>Security First:</strong> Each admin’s access is linked to their assigned venue, preventing cross-venue visibility or interference.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 EasyPark. All rights reserved. | Contact: support@easypark.com
+  </footer>
+
+</body>
+</html>

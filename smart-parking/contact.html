@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | EasyPark Smart Parking</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    body { background-color: #f5f5f5; color: #333; }
+
+    /* Header */
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .logo-container img {
+      height: 70px;
+    }
+
+    .logo-container h1 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* Navbar */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Contact Section */
+    .contact-section {
+      max-width: 800px;
+      margin: 60px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      color: #1e90ff;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #1e90ff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #187bcd;
+    }
+
+    .info-box {
+      background-color: #f0f8ff;
+      padding: 20px;
+      border-left: 5px solid #1e90ff;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .info-box h3 {
+      color: #1e90ff;
+      margin-bottom: 10px;
+    }
+
+    .info-box a {
+      color: #187bcd;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .info-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px 50px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; }
+      nav { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="Screenshot_2025-10-06_160522-removebg-preview.png" alt="EasyPark Logo">
+      <h1>EasyPark</h1>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="venue.html">Venues</a>
+      <a href="adminlogin.html">Admin Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Reach out to our EasyPark team for setup, technical support, or partnership inquiries.</p>
+
+   <form onsubmit="return showMessage()">
+  <input type="text" placeholder="Full Name" required>
+  <input type="email" placeholder="Email Address" required>
+  <input type="tel" placeholder="Phone Number" required>
+  <input type="text" placeholder="Address of the Location" required>
+  <textarea placeholder="Your Message..." required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+    <div class="info-box">
+      <h3>Contact Information</h3>
+      <p>
+        📧 Email: <a href="mailto:setup@easypark.com">setup@easypark.com</a><br>
+        📞 Phone: +91 98765 43210<br>
+        🏢 Address: EasyPark Technologies Pvt. Ltd., Bengaluru, India
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 EasyPark. All rights reserved. | Contact: support@easypark.com
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("✅ Message sent successfully! Our team will contact you soon.");
+      return false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venues - EasyPark</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    body { background-color: #f5f5f5; color: #333; }
+
+    /* Header */
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items:center;
+      gap: 5px;
+    }
+    .logo-container img {
+      height: 70px;
+    }
+    .logo-container h1 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Venue Section */
+    .venues-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 30px;
+    }
+
+    .venues-section h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #1e90ff;
+      text-align: center;
+    }
+
+    .venue-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .venue-card {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .venue-card h3 {
+      color: #1e90ff;
+      margin-bottom: 10px;
+    }
+
+    .venue-card p {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .venue-card button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .venue-card button:hover {
+      background-color: #187bcd;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px 50px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; }
+      nav { margin-top: 10px; }
+      .venue-card { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="Screenshot_2025-10-06_160522-removebg-preview.png" alt="EasyPark Logo">
+      <h1>EasyPark</h1>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="venue.html">Venues</a>
+      <a href="adminlogin.html">Admin Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Venues Section -->
+  <section class="venues-section">
+    <h2>Explore Available Venues</h2>
+    <div class="venue-grid">
+
+      <div class="venue-card">
+        <h3>City Mall Parking</h3>
+        <p><strong>Location:</strong> MG Road, Bangalore</p>
+        <p><strong>Facilities:</strong> EV Charging, CCTV, 24/7 Access</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="venue-card">
+        <h3>Airport Parking Zone</h3>
+        <p><strong>Location:</strong> Hyderabad International Airport</p>
+        <p><strong>Facilities:</strong> Covered Parking, Surveillance, Security</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="venue-card">
+        <h3>IT Park Basement</h3>
+        <p><strong>Location:</strong> Electronic City, Bangalore</p>
+        <p><strong>Facilities:</strong> EV Charging, Reserved Slots</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="venue-card">
+  <h3>Downtown Plaza Garage</h3>
+  <p><strong>Location:</strong> Main Street, New York</p>
+  <p><strong>Facilities:</strong> Covered Parking, Security Cameras, Handicap Access</p>
+  <button>View Details</button>
+</div>
+
+<div class="venue-card">
+  <h3>Greenfield Shopping Center</h3>
+  <p><strong>Location:</strong> Greenfield Avenue, Chicago</p>
+  <p><strong>Facilities:</strong> EV Charging, 24/7 Access, CCTV</p>
+  <button>View Details</button>
+</div>
+
+<div class="venue-card">
+  <h3>Seaside Mall Parking</h3>
+  <p><strong>Location:</strong> Ocean Drive, Miami</p>
+  <p><strong>Facilities:</strong> Open Air, Security Patrol, Lighting</p>
+  <button>View Details</button>
+</div>
+
+<div class="venue-card">
+  <h3>Central Business District Lot</h3>
+  <p><strong>Location:</strong> Downtown, San Francisco</p>
+  <p><strong>Facilities:</strong> Reserved Slots, Surveillance, EV Charging</p>
+  <button>View Details</button>
+</div>
+
+<div class="venue-card">
+  <h3>University Campus Parking</h3>
+  <p><strong>Location:</strong> College Road, Boston</p>
+  <p><strong>Facilities:</strong> Student Parking, Shuttle Access, CCTV</p>
+  <button>View Details</button>
+</div>
+
+<div class="venue-card">
+  <h3>Airport Economy Parking</h3>
+  <p><strong>Location:</strong> Airport Road, Dallas</p>
+  <p><strong>Facilities:</strong> Long-Term Parking, Security, Shuttle Service</p>
+  <button>View Details</button>
+</div>
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 EasyPark. All rights reserved. | Contact: support@easypark.com
+  </footer>
+
+</body>
+</html>

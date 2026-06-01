@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyPark - Smart Parking Management</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    body { background-color: #f5f5f5; color: #333; }
+
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items:center;
+      gap: 5px;
+    }
+    .logo-container img {
+      height: 70px; 
+    }
+    .logo-container h1 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      background: url('https://images.unsplash.com/photo-1590166894916-56e11a21e133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cGFya2luZ3x8fHx8fDE2OTQ4MTIxODQ&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+      color: #1e90ff;
+      text-align: center;
+    }
+
+    .hero h2 { font-size: 48px; margin-bottom: 20px; ;}
+    .hero p { font-size: 24px; margin-bottom: 30px;;}
+    .hero button {
+      padding: 15px 35px;
+      font-size: 18px;
+      background-color: #1e90ff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 2;
+      color: white;
+    }
+    .hero button:hover { background-color: #187bcd;; }
+
+    .car{
+      position: absolute;
+      bottom: 60px;
+      z-index: 1;
+    }
+    .car {
+      width: 520px; 
+      left: -300px;
+      animation: moveCar 10s linear infinite;
+    }
+
+
+    @keyframes moveCar {
+      0% { left: -300px; }
+      50% { transform: scale(1.05); }
+      100% { left: 110%; }
+    }
+
+
+    .how-it-works {
+      padding: 60px 50px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .how-it-works h3 { font-size: 40px; margin-bottom: 40px; color: #1e90ff; }
+    .steps {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .step {
+      background-color: #f0f8ff;
+      padding: 30px 20px;
+      margin: 10px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .step h4 { margin-bottom: 20px; color: #1e90ff; }
+    .step p { font-size: 16px; }
+
+    .admin-login {
+      text-align: center;
+      padding: 50px;
+    }
+    .admin-login button {
+      padding: 12px 30px ;
+      font-size: 18px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .admin-login button:hover { background-color: #187bcd; }
+
+    footer {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px 50px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .steps { flex-direction: column; align-items: center; }
+      .step { width: 80%; }
+      header { flex-direction: column; align-items: flex-start; }
+      nav { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="Screenshot_2025-10-06_160522-removebg-preview.png" alt="EasyPark Logo">
+      <h1>EasyPark</h1>
+    </div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="venue.html">Venues</a>
+      <a href="adminlogin.html">Admin Login</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Find, Reserve, and Park Smartly</h2>
+    <p>Real-time parking availability at your fingertips</p>
+    <button onclick="window.location.href='find-slot.html'">Find a Slot</button>
+
+
+    <!-- Animated Vehicles -->
+    <img src="Screenshot_2025-10-06_160817-removebg-preview.png" alt="Car" class="car">
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works">
+    <h3>How EasyPark Works</h3>
+    <div class="steps">
+      <div class="step">
+        <h4>1. Smart parking management</h4>
+        <p>EasyPark is a platform that helps users easily book available slots.</p>
+      </div>
+      <div class="step">
+        <h4>2. Reserve Your Spot</h4>
+        <p>Book a slot in advance and avoid searching for <br>parking.</p>
+      </div>
+      <div class="step">
+        <h4>3. Park Hassle-Free</h4>
+        <p>Get guidance to your reserved slot and<br> park safely.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="admin-login">
+    <h3>Venue Admin?</h3>
+    <button onclick="window.location.href='adminlogin.html'">Admin Login</button>
+  </section>
+
+
+  <footer>
+    &copy; 2025 EasyPark. All rights reserved. | Contact: support@easypark.com
+  </footer>
+
+</body>
+</html>
